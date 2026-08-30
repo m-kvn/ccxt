@@ -86,6 +86,7 @@ var latoken = require('./src/latoken.js');
 var lbank = require('./src/lbank.js');
 var lighter = require('./src/lighter.js');
 var luno = require('./src/luno.js');
+var massive = require('./src/massive.js');
 var mercado = require('./src/mercado.js');
 var mexc = require('./src/mexc.js');
 var modetrade = require('./src/modetrade.js');
@@ -277,6 +278,7 @@ const exchanges = {
     'lbank': lbank["default"],
     'lighter': lighter["default"],
     'luno': luno["default"],
+    'massive': massive["default"],
     'mercado': mercado["default"],
     'mexc': mexc["default"],
     'modetrade': modetrade["default"],
@@ -526,6 +528,7 @@ exports.latoken = latoken["default"];
 exports.lbank = lbank["default"];
 exports.lighter = lighter["default"];
 exports.luno = luno["default"];
+exports.massive = massive["default"];
 exports.mercado = mercado["default"];
 exports.mexc = mexc["default"];
 exports.modetrade = modetrade["default"];

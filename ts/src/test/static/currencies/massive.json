@@ -1,0 +1,77 @@
+{
+    "AAPL": {
+        "info": null,
+        "id": "AAPL",
+        "numericId": null,
+        "code": "AAPL",
+        "precision": 1,
+        "type": null,
+        "name": null,
+        "active": null,
+        "deposit": null,
+        "withdraw": null,
+        "fee": null,
+        "fees": {},
+        "networks": {},
+        "limits": {
+            "deposit": {
+                "min": null,
+                "max": null
+            },
+            "withdraw": {
+                "min": null,
+                "max": null
+            }
+        }
+    },
+    "MSFT": {
+        "info": null,
+        "id": "MSFT",
+        "numericId": null,
+        "code": "MSFT",
+        "precision": 1,
+        "type": null,
+        "name": null,
+        "active": null,
+        "deposit": null,
+        "withdraw": null,
+        "fee": null,
+        "fees": {},
+        "networks": {},
+        "limits": {
+            "deposit": {
+                "min": null,
+                "max": null
+            },
+            "withdraw": {
+                "min": null,
+                "max": null
+            }
+        }
+    },
+    "USD": {
+        "info": null,
+        "id": "usd",
+        "numericId": null,
+        "code": "USD",
+        "precision": 0.0001,
+        "type": null,
+        "name": null,
+        "active": null,
+        "deposit": null,
+        "withdraw": null,
+        "fee": null,
+        "fees": {},
+        "networks": {},
+        "limits": {
+            "deposit": {
+                "min": null,
+                "max": null
+            },
+            "withdraw": {
+                "min": null,
+                "max": null
+            }
+        }
+    }
+}

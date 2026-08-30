@@ -471,6 +471,17 @@ Verified across recent (`pacifica.ts`, `weex.ts`, `hyperliquid.ts`, `aster.ts`) 
 
 **Q: How do I scope a build to one exchange?** `npm run tsBuild` (TS→JS only); `tsx build/transpile.ts <exchange>` (one to Py/PHP); `npm run transpileCsSingle`, `npm run go-build-single`. Tests: `node run-tests <exchange> --js`.
 
+**Q: Bootstrapping a brand-new exchange — `emitAPI` can't find it / crashes on the missing abstract module.** Chicken-and-egg: `npm run emitAPI` imports `ts/src/<id>.ts`, which imports `./abstract/<id>.js`, which `emitAPI` is the thing that writes. Order is:
+
+1. write `ts/src/<id>.ts`,
+2. hand-write a stub `ts/src/abstract/<id>.ts` — the generated header, `import { Dict } from '../base/types.js'`, `import { Exchange as _Exchange } from '../base/Exchange.js'`, an empty `interface Exchange {}`, `abstract class Exchange extends _Exchange {}`, `export default Exchange`,
+3. `npm run export-exchanges` (auto-discovers `ts/src/*.ts`, registers the id in `ts/ccxt.ts`, `exchanges.json`, the per-language metadata and the README/wiki tables),
+4. `npm run emitAPI` — now overwrites the stub with the real implicit-API signatures.
+
+Static-fixture exchanges also need `ts/src/test/static/{markets,currencies}/<id>.json`; the offline harness `ioFileRead`s both unconditionally and throws if either is missing.
+
+**Q: `goTranspiler` rewrote `go/v4/exchange_generated.go` and `exchange_wrappers.go` with a 15k-line diff.** You don't have `gofmt` on PATH, so the transpiler logs `gofmt not found` and writes the Go base files with default indentation. Those two files are unrelated to a single-exchange change — `git checkout -- go/v4/exchange_generated.go go/v4/exchange_wrappers.go` after transpiling and keep only `go/v4/<id>*.go`.
+
 **Q: Add a helper method?** Reusable across exchanges → `ts/src/base/Exchange.ts`. Exchange-specific → exchange file. Don't add a base method only one exchange uses.
 
 **Q: New unified method vs. extend existing?** Match `wiki/Manual.md`. New unified methods need agreement — check `wiki/Requirements.md` and discuss first. Exchange-specific tweaks go through `params`.

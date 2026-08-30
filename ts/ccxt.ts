@@ -122,6 +122,7 @@ import latoken from  './src/latoken.js'
 import lbank from  './src/lbank.js'
 import lighter from  './src/lighter.js'
 import luno from  './src/luno.js'
+import massive from  './src/massive.js'
 import mercado from  './src/mercado.js'
 import mexc from  './src/mexc.js'
 import modetrade from  './src/modetrade.js'
@@ -314,6 +315,7 @@ const exchanges = {
     'lbank':                  lbank,
     'lighter':                lighter,
     'luno':                   luno,
+    'massive':                massive,
     'mercado':                mercado,
     'mexc':                   mexc,
     'modetrade':              modetrade,
@@ -676,6 +678,7 @@ export {
     lbank,
     lighter,
     luno,
+    massive,
     mercado,
     mexc,
     modetrade,

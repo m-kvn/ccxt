@@ -1,0 +1,142 @@
+{
+    "exchange": "massive",
+    "skipKeys": [],
+    "outputType": "urlencoded",
+    "methods": {
+        "fetchStatus": [
+            {
+                "description": "fetchStatus",
+                "method": "fetchStatus",
+                "url": "https://api.massive.com/v1/marketstatus/now",
+                "input": []
+            }
+        ],
+        "fetchTime": [
+            {
+                "description": "fetchTime",
+                "method": "fetchTime",
+                "url": "https://api.massive.com/v1/marketstatus/now",
+                "input": []
+            }
+        ],
+        "fetchMarkets": [
+            {
+                "description": "fetchMarkets",
+                "method": "fetchMarkets",
+                "url": "https://api.massive.com/v3/reference/tickers?market=stocks&active=true&limit=1000",
+                "input": []
+            }
+        ],
+        "fetchOHLCV": [
+            {
+                "description": "daily candles",
+                "method": "fetchOHLCV",
+                "url": "https://api.massive.com/v2/aggs/ticker/AAPL/range/1/day/1785729600000/1786161600000?limit=5&sort=asc&adjusted=true",
+                "input": [
+                    "AAPL/USD",
+                    "1d",
+                    1785729600000,
+                    5,
+                    {
+                        "until": 1786161600000
+                    }
+                ]
+            },
+            {
+                "description": "minute candles",
+                "method": "fetchOHLCV",
+                "url": "https://api.massive.com/v2/aggs/ticker/AAPL/range/1/minute/1785729600000/1785730200000?limit=10&sort=asc&adjusted=true",
+                "input": [
+                    "AAPL/USD",
+                    "1m",
+                    1785729600000,
+                    10,
+                    {
+                        "until": 1785730200000
+                    }
+                ]
+            }
+        ],
+        "fetchTicker": [
+            {
+                "description": "ticker from the single ticker snapshot",
+                "method": "fetchTicker",
+                "url": "https://api.massive.com/v2/snapshot/locale/us/markets/stocks/tickers/AAPL",
+                "input": [
+                    "AAPL/USD"
+                ]
+            },
+            {
+                "description": "ticker from the previous day bar",
+                "method": "fetchTicker",
+                "url": "https://api.massive.com/v2/aggs/ticker/AAPL/prev",
+                "input": [
+                    "AAPL/USD",
+                    {
+                        "method": "previousDayBar"
+                    }
+                ]
+            }
+        ],
+        "fetchTickers": [
+            {
+                "description": "tickers from the full market snapshot",
+                "method": "fetchTickers",
+                "url": "https://api.massive.com/v2/snapshot/locale/us/markets/stocks/tickers?tickers=AAPL%2CMSFT",
+                "input": [
+                    [
+                        "AAPL/USD",
+                        "MSFT/USD"
+                    ]
+                ]
+            },
+            {
+                "description": "tickers from the daily market summary",
+                "method": "fetchTickers",
+                "url": "https://api.massive.com/v2/aggs/grouped/locale/us/market/stocks/2026-08-28",
+                "input": [
+                    [
+                        "AAPL/USD",
+                        "MSFT/USD"
+                    ],
+                    {
+                        "method": "groupedDailyBars",
+                        "date": "2026-08-28"
+                    }
+                ]
+            }
+        ],
+        "fetchTrades": [
+            {
+                "description": "recent trades",
+                "method": "fetchTrades",
+                "url": "https://api.massive.com/v3/trades/AAPL?sort=timestamp&order=desc&limit=100",
+                "input": [
+                    "AAPL/USD",
+                    null,
+                    100
+                ]
+            },
+            {
+                "description": "trades since a timestamp",
+                "method": "fetchTrades",
+                "url": "https://api.massive.com/v3/trades/AAPL?sort=timestamp&order=asc&limit=100&timestamp.gte=1517562000000000000",
+                "input": [
+                    "AAPL/USD",
+                    1517562000000,
+                    100
+                ]
+            }
+        ],
+        "fetchOrderBook": [
+            {
+                "description": "national best bid and offer",
+                "method": "fetchOrderBook",
+                "url": "https://api.massive.com/v2/last/nbbo/AAPL",
+                "input": [
+                    "AAPL/USD"
+                ]
+            }
+        ]
+    }
+}

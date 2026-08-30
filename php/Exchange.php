@@ -417,6 +417,7 @@ class BaseExchange {
         'lbank',
         'lighter',
         'luno',
+        'massive',
         'mercado',
         'mexc',
         'modetrade',

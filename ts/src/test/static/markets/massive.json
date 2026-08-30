@@ -1,0 +1,88 @@
+{
+    "AAPL/USD": {
+        "id": "AAPL",
+        "symbol": "AAPL/USD",
+        "base": "AAPL",
+        "quote": "USD",
+        "baseId": "AAPL",
+        "quoteId": "usd",
+        "active": true,
+        "type": "spot",
+        "spot": true,
+        "stock": true,
+        "margin": false,
+        "swap": false,
+        "future": false,
+        "option": false,
+        "contract": false,
+        "taker": 0,
+        "maker": 0,
+        "precision": {
+            "amount": 1,
+            "price": 0.0001
+        },
+        "limits": {
+            "amount": {},
+            "price": {},
+            "cost": {},
+            "leverage": {}
+        },
+        "info": {
+            "ticker": "AAPL",
+            "name": "Apple Inc.",
+            "market": "stocks",
+            "locale": "us",
+            "primary_exchange": "XNAS",
+            "type": "CS",
+            "active": true,
+            "currency_name": "usd",
+            "cik": "0000320193",
+            "composite_figi": "BBG000B9XRY4",
+            "share_class_figi": "BBG001S5N8V8",
+            "last_updated_utc": "2026-08-29T06:10:48.224862169Z"
+        }
+    },
+    "MSFT/USD": {
+        "id": "MSFT",
+        "symbol": "MSFT/USD",
+        "base": "MSFT",
+        "quote": "USD",
+        "baseId": "MSFT",
+        "quoteId": "usd",
+        "active": true,
+        "type": "spot",
+        "spot": true,
+        "stock": true,
+        "margin": false,
+        "swap": false,
+        "future": false,
+        "option": false,
+        "contract": false,
+        "taker": 0,
+        "maker": 0,
+        "precision": {
+            "amount": 1,
+            "price": 0.0001
+        },
+        "limits": {
+            "amount": {},
+            "price": {},
+            "cost": {},
+            "leverage": {}
+        },
+        "info": {
+            "ticker": "MSFT",
+            "name": "Microsoft Corporation",
+            "market": "stocks",
+            "locale": "us",
+            "primary_exchange": "XNAS",
+            "type": "CS",
+            "active": true,
+            "currency_name": "usd",
+            "cik": "0000789019",
+            "composite_figi": "BBG000BPH459",
+            "share_class_figi": "BBG001S5TD05",
+            "last_updated_utc": "2026-08-29T06:10:48.224863091Z"
+        }
+    }
+}

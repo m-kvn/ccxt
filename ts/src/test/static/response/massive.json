@@ -1,0 +1,1300 @@
+{
+    "exchange": "massive",
+    "skipKeys": [],
+    "methods": {
+        "fetchStatus": [
+            {
+                "description": "fetchStatus",
+                "method": "fetchStatus",
+                "input": [],
+                "httpResponse": {
+                    "afterHours": false,
+                    "currencies": {
+                        "crypto": "open",
+                        "fx": "closed"
+                    },
+                    "earlyHours": false,
+                    "exchanges": {
+                        "nasdaq": "closed",
+                        "nyse": "closed",
+                        "otc": "closed"
+                    },
+                    "indicesGroups": {
+                        "s_and_p": "closed",
+                        "nasdaq": "closed",
+                        "dow_jones": "closed"
+                    },
+                    "market": "closed",
+                    "serverTime": "2026-08-29T22:03:43-04:00"
+                },
+                "parsedResponse": {
+                    "status": "ok",
+                    "updated": 1788055423000,
+                    "eta": null,
+                    "url": null,
+                    "info": {
+                        "afterHours": false,
+                        "currencies": {
+                            "crypto": "open",
+                            "fx": "closed"
+                        },
+                        "earlyHours": false,
+                        "exchanges": {
+                            "nasdaq": "closed",
+                            "nyse": "closed",
+                            "otc": "closed"
+                        },
+                        "indicesGroups": {
+                            "s_and_p": "closed",
+                            "nasdaq": "closed",
+                            "dow_jones": "closed"
+                        },
+                        "market": "closed",
+                        "serverTime": "2026-08-29T22:03:43-04:00"
+                    }
+                }
+            }
+        ],
+        "fetchTime": [
+            {
+                "description": "fetchTime",
+                "method": "fetchTime",
+                "input": [],
+                "httpResponse": {
+                    "afterHours": false,
+                    "currencies": {
+                        "crypto": "open",
+                        "fx": "closed"
+                    },
+                    "earlyHours": false,
+                    "exchanges": {
+                        "nasdaq": "closed",
+                        "nyse": "closed",
+                        "otc": "closed"
+                    },
+                    "indicesGroups": {
+                        "s_and_p": "closed",
+                        "nasdaq": "closed",
+                        "dow_jones": "closed"
+                    },
+                    "market": "closed",
+                    "serverTime": "2026-08-29T22:03:43-04:00"
+                },
+                "parsedResponse": 1788055423000
+            },
+            {
+                "description": "fetchTime with a positive utc offset",
+                "method": "fetchTime",
+                "input": [],
+                "httpResponse": {
+                    "afterHours": false,
+                    "currencies": {
+                        "crypto": "open",
+                        "fx": "closed"
+                    },
+                    "earlyHours": false,
+                    "exchanges": {
+                        "nasdaq": "closed",
+                        "nyse": "closed",
+                        "otc": "closed"
+                    },
+                    "indicesGroups": {
+                        "s_and_p": "closed",
+                        "nasdaq": "closed",
+                        "dow_jones": "closed"
+                    },
+                    "market": "closed",
+                    "serverTime": "2026-08-30T07:33:43+05:30"
+                },
+                "parsedResponse": 1788055423000
+            },
+            {
+                "description": "fetchTime with a zulu timestamp",
+                "method": "fetchTime",
+                "input": [],
+                "httpResponse": {
+                    "afterHours": false,
+                    "currencies": {
+                        "crypto": "open",
+                        "fx": "closed"
+                    },
+                    "earlyHours": false,
+                    "exchanges": {
+                        "nasdaq": "closed",
+                        "nyse": "closed",
+                        "otc": "closed"
+                    },
+                    "indicesGroups": {
+                        "s_and_p": "closed",
+                        "nasdaq": "closed",
+                        "dow_jones": "closed"
+                    },
+                    "market": "closed",
+                    "serverTime": "2026-08-30T02:03:43Z"
+                },
+                "parsedResponse": 1788055423000
+            }
+        ],
+        "fetchMarkets": [
+            {
+                "description": "fetchMarkets",
+                "method": "fetchMarkets",
+                "input": [],
+                "httpResponse": {
+                    "results": [
+                        {
+                            "ticker": "AAPL",
+                            "name": "Apple Inc.",
+                            "market": "stocks",
+                            "locale": "us",
+                            "primary_exchange": "XNAS",
+                            "type": "CS",
+                            "active": true,
+                            "currency_name": "usd",
+                            "cik": "0000320193",
+                            "composite_figi": "BBG000B9XRY4",
+                            "share_class_figi": "BBG001S5N8V8",
+                            "last_updated_utc": "2026-08-29T06:10:48.224862169Z"
+                        },
+                        {
+                            "ticker": "MSFT",
+                            "name": "Microsoft Corporation",
+                            "market": "stocks",
+                            "locale": "us",
+                            "primary_exchange": "XNAS",
+                            "type": "CS",
+                            "active": true,
+                            "currency_name": "usd",
+                            "cik": "0000789019",
+                            "composite_figi": "BBG000BPH459",
+                            "share_class_figi": "BBG001S5TD05",
+                            "last_updated_utc": "2026-08-29T06:10:48.224863091Z"
+                        }
+                    ],
+                    "status": "OK",
+                    "request_id": "c7fa5b578083aeb23c5542e15efe7b14",
+                    "count": 2
+                },
+                "parsedResponse": [
+                    {
+                        "id": "AAPL",
+                        "lowercaseId": null,
+                        "symbol": "AAPL/USD",
+                        "base": "AAPL",
+                        "quote": "USD",
+                        "settle": null,
+                        "baseId": "AAPL",
+                        "quoteId": "usd",
+                        "settleId": null,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "swap": false,
+                        "future": false,
+                        "option": false,
+                        "index": false,
+                        "active": true,
+                        "contract": false,
+                        "linear": null,
+                        "inverse": null,
+                        "subType": null,
+                        "taker": 0,
+                        "maker": 0,
+                        "contractSize": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "precision": {
+                            "amount": 1,
+                            "price": 0.0001
+                        },
+                        "limits": {
+                            "leverage": {
+                                "min": null,
+                                "max": null
+                            },
+                            "amount": {
+                                "min": null,
+                                "max": null
+                            },
+                            "price": {
+                                "min": null,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": null,
+                            "isolated": null
+                        },
+                        "created": null,
+                        "info": {
+                            "ticker": "AAPL",
+                            "name": "Apple Inc.",
+                            "market": "stocks",
+                            "locale": "us",
+                            "primary_exchange": "XNAS",
+                            "type": "CS",
+                            "active": true,
+                            "currency_name": "usd",
+                            "cik": "0000320193",
+                            "composite_figi": "BBG000B9XRY4",
+                            "share_class_figi": "BBG001S5N8V8",
+                            "last_updated_utc": "2026-08-29T06:10:48.224862169Z"
+                        },
+                        "stock": true
+                    },
+                    {
+                        "id": "MSFT",
+                        "lowercaseId": null,
+                        "symbol": "MSFT/USD",
+                        "base": "MSFT",
+                        "quote": "USD",
+                        "settle": null,
+                        "baseId": "MSFT",
+                        "quoteId": "usd",
+                        "settleId": null,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "swap": false,
+                        "future": false,
+                        "option": false,
+                        "index": false,
+                        "active": true,
+                        "contract": false,
+                        "linear": null,
+                        "inverse": null,
+                        "subType": null,
+                        "taker": 0,
+                        "maker": 0,
+                        "contractSize": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "precision": {
+                            "amount": 1,
+                            "price": 0.0001
+                        },
+                        "limits": {
+                            "leverage": {
+                                "min": null,
+                                "max": null
+                            },
+                            "amount": {
+                                "min": null,
+                                "max": null
+                            },
+                            "price": {
+                                "min": null,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": null,
+                            "isolated": null
+                        },
+                        "created": null,
+                        "info": {
+                            "ticker": "MSFT",
+                            "name": "Microsoft Corporation",
+                            "market": "stocks",
+                            "locale": "us",
+                            "primary_exchange": "XNAS",
+                            "type": "CS",
+                            "active": true,
+                            "currency_name": "usd",
+                            "cik": "0000789019",
+                            "composite_figi": "BBG000BPH459",
+                            "share_class_figi": "BBG001S5TD05",
+                            "last_updated_utc": "2026-08-29T06:10:48.224863091Z"
+                        },
+                        "stock": true
+                    }
+                ]
+            }
+        ],
+        "fetchOHLCV": [
+            {
+                "description": "daily candles",
+                "method": "fetchOHLCV",
+                "input": [
+                    "AAPL/USD",
+                    "1d",
+                    1785729600000,
+                    5,
+                    {
+                        "until": 1786161600000
+                    }
+                ],
+                "httpResponse": {
+                    "ticker": "AAPL",
+                    "queryCount": 3,
+                    "resultsCount": 3,
+                    "adjusted": true,
+                    "results": [
+                        {
+                            "v": 75051951,
+                            "vw": 305.1311,
+                            "o": 309.58,
+                            "c": 303.42,
+                            "h": 311.8,
+                            "l": 302.56,
+                            "t": 1785729600000,
+                            "n": 1388685
+                        },
+                        {
+                            "v": 68000969,
+                            "vw": 307.7608,
+                            "o": 302.725,
+                            "c": 309.38,
+                            "h": 310.42,
+                            "l": 301.32,
+                            "t": 1785816000000,
+                            "n": 1104635
+                        },
+                        {
+                            "v": 49438763,
+                            "vw": 309.5665,
+                            "o": 309.36,
+                            "c": 311,
+                            "h": 311.71,
+                            "l": 305.67,
+                            "t": 1785902400000,
+                            "n": 959132
+                        }
+                    ],
+                    "status": "OK",
+                    "request_id": "4af76f03852c2c3079dab13f2d8e6081",
+                    "count": 3
+                },
+                "parsedResponse": [
+                    [
+                        1785729600000,
+                        309.58,
+                        311.8,
+                        302.56,
+                        303.42,
+                        75051951
+                    ],
+                    [
+                        1785816000000,
+                        302.725,
+                        310.42,
+                        301.32,
+                        309.38,
+                        68000969
+                    ],
+                    [
+                        1785902400000,
+                        309.36,
+                        311.71,
+                        305.67,
+                        311,
+                        49438763
+                    ]
+                ]
+            },
+            {
+                "description": "minute candles",
+                "method": "fetchOHLCV",
+                "input": [
+                    "AAPL/USD",
+                    "1m",
+                    1785729600000,
+                    10,
+                    {
+                        "until": 1785730200000
+                    }
+                ],
+                "httpResponse": {
+                    "ticker": "AAPL",
+                    "queryCount": 3,
+                    "resultsCount": 3,
+                    "adjusted": true,
+                    "results": [
+                        {
+                            "v": 75051951,
+                            "vw": 305.1311,
+                            "o": 309.58,
+                            "c": 303.42,
+                            "h": 311.8,
+                            "l": 302.56,
+                            "t": 1785729600000,
+                            "n": 1388685
+                        },
+                        {
+                            "v": 68000969,
+                            "vw": 307.7608,
+                            "o": 302.725,
+                            "c": 309.38,
+                            "h": 310.42,
+                            "l": 301.32,
+                            "t": 1785816000000,
+                            "n": 1104635
+                        },
+                        {
+                            "v": 49438763,
+                            "vw": 309.5665,
+                            "o": 309.36,
+                            "c": 311,
+                            "h": 311.71,
+                            "l": 305.67,
+                            "t": 1785902400000,
+                            "n": 959132
+                        }
+                    ],
+                    "status": "OK",
+                    "request_id": "4af76f03852c2c3079dab13f2d8e6081",
+                    "count": 3
+                },
+                "parsedResponse": [
+                    [
+                        1785729600000,
+                        309.58,
+                        311.8,
+                        302.56,
+                        303.42,
+                        75051951
+                    ],
+                    [
+                        1785816000000,
+                        302.725,
+                        310.42,
+                        301.32,
+                        309.38,
+                        68000969
+                    ],
+                    [
+                        1785902400000,
+                        309.36,
+                        311.71,
+                        305.67,
+                        311,
+                        49438763
+                    ]
+                ]
+            }
+        ],
+        "fetchTicker": [
+            {
+                "description": "ticker from the single ticker snapshot",
+                "method": "fetchTicker",
+                "input": [
+                    "AAPL/USD"
+                ],
+                "httpResponse": {
+                    "request_id": "657e430f1ae768891f018e08e03598d8",
+                    "status": "OK",
+                    "ticker": {
+                        "ticker": "AAPL",
+                        "day": {
+                            "o": 316.845,
+                            "h": 322.37,
+                            "l": 315.4504,
+                            "c": 319.7,
+                            "v": 38649398,
+                            "vw": 319.5134
+                        },
+                        "lastQuote": {
+                            "P": 319.75,
+                            "S": 4,
+                            "p": 319.68,
+                            "s": 8,
+                            "t": 1787968800507251700
+                        },
+                        "lastTrade": {
+                            "c": [
+                                14,
+                                41
+                            ],
+                            "i": "4046",
+                            "p": 319.7,
+                            "s": 236,
+                            "t": 1787968800306274000,
+                            "x": 10
+                        },
+                        "min": {
+                            "av": 38649398,
+                            "c": 319.7,
+                            "h": 319.82,
+                            "l": 319.54,
+                            "n": 762,
+                            "o": 319.6,
+                            "t": 1787968800000,
+                            "v": 270796,
+                            "vw": 319.66
+                        },
+                        "prevDay": {
+                            "o": 309.36,
+                            "h": 311.71,
+                            "l": 305.67,
+                            "c": 311,
+                            "v": 49438763,
+                            "vw": 309.5665
+                        },
+                        "todaysChange": 8.7,
+                        "todaysChangePerc": 2.797,
+                        "updated": 1787968800306274000
+                    }
+                },
+                "parsedResponse": {
+                    "symbol": "AAPL/USD",
+                    "timestamp": 1787968800306,
+                    "datetime": "2026-08-29T02:00:00.306Z",
+                    "high": 322.37,
+                    "low": 315.4504,
+                    "bid": 319.68,
+                    "bidVolume": 8,
+                    "ask": 319.75,
+                    "askVolume": 4,
+                    "vwap": 319.5134,
+                    "open": 316.845,
+                    "close": 319.7,
+                    "last": 319.7,
+                    "previousClose": 311,
+                    "change": 8.7,
+                    "percentage": 2.797,
+                    "average": 318.2725,
+                    "baseVolume": 38649398,
+                    "quoteVolume": null,
+                    "info": {
+                        "ticker": "AAPL",
+                        "day": {
+                            "o": 316.845,
+                            "h": 322.37,
+                            "l": 315.4504,
+                            "c": 319.7,
+                            "v": 38649398,
+                            "vw": 319.5134
+                        },
+                        "lastQuote": {
+                            "P": 319.75,
+                            "S": 4,
+                            "p": 319.68,
+                            "s": 8,
+                            "t": 1787968800507251700
+                        },
+                        "lastTrade": {
+                            "c": [
+                                14,
+                                41
+                            ],
+                            "i": "4046",
+                            "p": 319.7,
+                            "s": 236,
+                            "t": 1787968800306274000,
+                            "x": 10
+                        },
+                        "min": {
+                            "av": 38649398,
+                            "c": 319.7,
+                            "h": 319.82,
+                            "l": 319.54,
+                            "n": 762,
+                            "o": 319.6,
+                            "t": 1787968800000,
+                            "v": 270796,
+                            "vw": 319.66
+                        },
+                        "prevDay": {
+                            "o": 309.36,
+                            "h": 311.71,
+                            "l": 305.67,
+                            "c": 311,
+                            "v": 49438763,
+                            "vw": 309.5665
+                        },
+                        "todaysChange": 8.7,
+                        "todaysChangePerc": 2.797,
+                        "updated": 1787968800306274000
+                    },
+                    "indexPrice": null,
+                    "markPrice": null
+                }
+            },
+            {
+                "description": "ticker from the previous day bar",
+                "method": "fetchTicker",
+                "input": [
+                    "AAPL/USD",
+                    {
+                        "method": "previousDayBar"
+                    }
+                ],
+                "httpResponse": {
+                    "ticker": "AAPL",
+                    "queryCount": 1,
+                    "resultsCount": 1,
+                    "adjusted": true,
+                    "results": [
+                        {
+                            "T": "AAPL",
+                            "v": 38649398,
+                            "vw": 319.5134,
+                            "o": 316.845,
+                            "c": 319.7,
+                            "h": 322.37,
+                            "l": 315.4504,
+                            "t": 1787947200000,
+                            "n": 760062
+                        }
+                    ],
+                    "status": "OK",
+                    "request_id": "522135feb704e50f609b6a3b94f64e62",
+                    "count": 1
+                },
+                "parsedResponse": {
+                    "symbol": "AAPL/USD",
+                    "timestamp": 1787947200000,
+                    "datetime": "2026-08-28T20:00:00.000Z",
+                    "high": 322.37,
+                    "low": 315.4504,
+                    "bid": null,
+                    "bidVolume": null,
+                    "ask": null,
+                    "askVolume": null,
+                    "vwap": 319.5134,
+                    "open": 316.845,
+                    "close": 319.7,
+                    "last": 319.7,
+                    "previousClose": null,
+                    "change": 2.855,
+                    "percentage": 0.9010715018384383,
+                    "average": 318.2725,
+                    "baseVolume": 38649398,
+                    "quoteVolume": null,
+                    "info": {
+                        "T": "AAPL",
+                        "v": 38649398,
+                        "vw": 319.5134,
+                        "o": 316.845,
+                        "c": 319.7,
+                        "h": 322.37,
+                        "l": 315.4504,
+                        "t": 1787947200000,
+                        "n": 760062
+                    },
+                    "indexPrice": null,
+                    "markPrice": null
+                }
+            }
+        ],
+        "fetchTickers": [
+            {
+                "description": "tickers from the full market snapshot",
+                "method": "fetchTickers",
+                "input": [
+                    [
+                        "AAPL/USD",
+                        "MSFT/USD"
+                    ]
+                ],
+                "httpResponse": {
+                    "count": 2,
+                    "status": "OK",
+                    "tickers": [
+                        {
+                            "ticker": "AAPL",
+                            "day": {
+                                "o": 316.845,
+                                "h": 322.37,
+                                "l": 315.4504,
+                                "c": 319.7,
+                                "v": 38649398,
+                                "vw": 319.5134
+                            },
+                            "prevDay": {
+                                "o": 309.36,
+                                "h": 311.71,
+                                "l": 305.67,
+                                "c": 311,
+                                "v": 49438763,
+                                "vw": 309.5665
+                            },
+                            "lastQuote": {
+                                "p": 319.68,
+                                "s": 8,
+                                "P": 319.75,
+                                "S": 4,
+                                "t": 1787968800507251700
+                            },
+                            "lastTrade": {
+                                "p": 319.7,
+                                "s": 236,
+                                "x": 10,
+                                "t": 1787968800306274000,
+                                "i": "4046",
+                                "c": [
+                                    14,
+                                    41
+                                ]
+                            },
+                            "todaysChange": 8.7,
+                            "todaysChangePerc": 2.797,
+                            "updated": 1787968800306274000
+                        },
+                        {
+                            "ticker": "MSFT",
+                            "day": {
+                                "o": 510.2,
+                                "h": 515.1,
+                                "l": 508.9,
+                                "c": 513.75,
+                                "v": 12345678,
+                                "vw": 512.4412
+                            },
+                            "prevDay": {
+                                "o": 505.1,
+                                "h": 511.4,
+                                "l": 503.2,
+                                "c": 509.4,
+                                "v": 15432100,
+                                "vw": 507.8812
+                            },
+                            "lastQuote": {
+                                "p": 513.7,
+                                "s": 2,
+                                "P": 513.8,
+                                "S": 5,
+                                "t": 1787968800507251700
+                            },
+                            "lastTrade": {
+                                "p": 513.75,
+                                "s": 100,
+                                "x": 12,
+                                "t": 1787968800306274000,
+                                "i": "4047",
+                                "c": [
+                                    14
+                                ]
+                            },
+                            "todaysChange": 4.35,
+                            "todaysChangePerc": 0.854,
+                            "updated": 1787968800306274000
+                        }
+                    ]
+                },
+                "parsedResponse": {
+                    "AAPL/USD": {
+                        "symbol": "AAPL/USD",
+                        "timestamp": 1787968800306,
+                        "datetime": "2026-08-29T02:00:00.306Z",
+                        "high": 322.37,
+                        "low": 315.4504,
+                        "bid": 319.68,
+                        "bidVolume": 8,
+                        "ask": 319.75,
+                        "askVolume": 4,
+                        "vwap": 319.5134,
+                        "open": 316.845,
+                        "close": 319.7,
+                        "last": 319.7,
+                        "previousClose": 311,
+                        "change": 8.7,
+                        "percentage": 2.797,
+                        "average": 318.2725,
+                        "baseVolume": 38649398,
+                        "quoteVolume": null,
+                        "info": {
+                            "ticker": "AAPL",
+                            "day": {
+                                "o": 316.845,
+                                "h": 322.37,
+                                "l": 315.4504,
+                                "c": 319.7,
+                                "v": 38649398,
+                                "vw": 319.5134
+                            },
+                            "prevDay": {
+                                "o": 309.36,
+                                "h": 311.71,
+                                "l": 305.67,
+                                "c": 311,
+                                "v": 49438763,
+                                "vw": 309.5665
+                            },
+                            "lastQuote": {
+                                "p": 319.68,
+                                "s": 8,
+                                "P": 319.75,
+                                "S": 4,
+                                "t": 1787968800507251700
+                            },
+                            "lastTrade": {
+                                "p": 319.7,
+                                "s": 236,
+                                "x": 10,
+                                "t": 1787968800306274000,
+                                "i": "4046",
+                                "c": [
+                                    14,
+                                    41
+                                ]
+                            },
+                            "todaysChange": 8.7,
+                            "todaysChangePerc": 2.797,
+                            "updated": 1787968800306274000
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    },
+                    "MSFT/USD": {
+                        "symbol": "MSFT/USD",
+                        "timestamp": 1787968800306,
+                        "datetime": "2026-08-29T02:00:00.306Z",
+                        "high": 515.1,
+                        "low": 508.9,
+                        "bid": 513.7,
+                        "bidVolume": 2,
+                        "ask": 513.8,
+                        "askVolume": 5,
+                        "vwap": 512.4412,
+                        "open": 510.2,
+                        "close": 513.75,
+                        "last": 513.75,
+                        "previousClose": 509.4,
+                        "change": 4.35,
+                        "percentage": 0.854,
+                        "average": 511.975,
+                        "baseVolume": 12345678,
+                        "quoteVolume": null,
+                        "info": {
+                            "ticker": "MSFT",
+                            "day": {
+                                "o": 510.2,
+                                "h": 515.1,
+                                "l": 508.9,
+                                "c": 513.75,
+                                "v": 12345678,
+                                "vw": 512.4412
+                            },
+                            "prevDay": {
+                                "o": 505.1,
+                                "h": 511.4,
+                                "l": 503.2,
+                                "c": 509.4,
+                                "v": 15432100,
+                                "vw": 507.8812
+                            },
+                            "lastQuote": {
+                                "p": 513.7,
+                                "s": 2,
+                                "P": 513.8,
+                                "S": 5,
+                                "t": 1787968800507251700
+                            },
+                            "lastTrade": {
+                                "p": 513.75,
+                                "s": 100,
+                                "x": 12,
+                                "t": 1787968800306274000,
+                                "i": "4047",
+                                "c": [
+                                    14
+                                ]
+                            },
+                            "todaysChange": 4.35,
+                            "todaysChangePerc": 0.854,
+                            "updated": 1787968800306274000
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    }
+                }
+            },
+            {
+                "description": "tickers from the daily market summary",
+                "method": "fetchTickers",
+                "input": [
+                    [
+                        "AAPL/USD",
+                        "MSFT/USD"
+                    ],
+                    {
+                        "method": "groupedDailyBars",
+                        "date": "2026-08-28"
+                    }
+                ],
+                "httpResponse": {
+                    "queryCount": 2,
+                    "resultsCount": 2,
+                    "adjusted": true,
+                    "results": [
+                        {
+                            "T": "AAPL",
+                            "v": 38649398,
+                            "vw": 319.5134,
+                            "o": 316.845,
+                            "c": 319.7,
+                            "h": 322.37,
+                            "l": 315.4504,
+                            "t": 1787947200000,
+                            "n": 760062
+                        },
+                        {
+                            "T": "MSFT",
+                            "v": 12345678,
+                            "vw": 512.4412,
+                            "o": 510.2,
+                            "c": 513.75,
+                            "h": 515.1,
+                            "l": 508.9,
+                            "t": 1787947200000,
+                            "n": 210433
+                        }
+                    ],
+                    "status": "OK",
+                    "request_id": "9b2b1c3d4e5f60718293a4b5c6d7e8f9"
+                },
+                "parsedResponse": {
+                    "AAPL/USD": {
+                        "symbol": "AAPL/USD",
+                        "timestamp": 1787947200000,
+                        "datetime": "2026-08-28T20:00:00.000Z",
+                        "high": 322.37,
+                        "low": 315.4504,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": 319.5134,
+                        "open": 316.845,
+                        "close": 319.7,
+                        "last": 319.7,
+                        "previousClose": null,
+                        "change": 2.855,
+                        "percentage": 0.9010715018384383,
+                        "average": 318.2725,
+                        "baseVolume": 38649398,
+                        "quoteVolume": null,
+                        "info": {
+                            "T": "AAPL",
+                            "v": 38649398,
+                            "vw": 319.5134,
+                            "o": 316.845,
+                            "c": 319.7,
+                            "h": 322.37,
+                            "l": 315.4504,
+                            "t": 1787947200000,
+                            "n": 760062
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    },
+                    "MSFT/USD": {
+                        "symbol": "MSFT/USD",
+                        "timestamp": 1787947200000,
+                        "datetime": "2026-08-28T20:00:00.000Z",
+                        "high": 515.1,
+                        "low": 508.9,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": 512.4412,
+                        "open": 510.2,
+                        "close": 513.75,
+                        "last": 513.75,
+                        "previousClose": null,
+                        "change": 3.55,
+                        "percentage": 0.6958055664445315,
+                        "average": 511.975,
+                        "baseVolume": 12345678,
+                        "quoteVolume": null,
+                        "info": {
+                            "T": "MSFT",
+                            "v": 12345678,
+                            "vw": 512.4412,
+                            "o": 510.2,
+                            "c": 513.75,
+                            "h": 515.1,
+                            "l": 508.9,
+                            "t": 1787947200000,
+                            "n": 210433
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    }
+                }
+            }
+        ],
+        "fetchTrades": [
+            {
+                "description": "recent trades",
+                "method": "fetchTrades",
+                "input": [
+                    "AAPL/USD",
+                    null,
+                    100
+                ],
+                "httpResponse": {
+                    "request_id": "a47d1beb8c11b6ae897ab76cdbbf35a3",
+                    "status": "OK",
+                    "results": [
+                        {
+                            "id": "1",
+                            "exchange": 11,
+                            "tape": 3,
+                            "price": 171.55,
+                            "size": 100,
+                            "conditions": [
+                                12,
+                                41
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1063,
+                            "participant_timestamp": 1517562000015577000,
+                            "sip_timestamp": 1517562000016036600
+                        },
+                        {
+                            "id": "2",
+                            "exchange": 12,
+                            "tape": 3,
+                            "price": 171.56,
+                            "size": 50,
+                            "conditions": [
+                                12
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1064,
+                            "participant_timestamp": 1517562000115577000,
+                            "sip_timestamp": 1517562000116036600
+                        }
+                    ]
+                },
+                "parsedResponse": [
+                    {
+                        "id": "1",
+                        "info": {
+                            "id": "1",
+                            "exchange": 11,
+                            "tape": 3,
+                            "price": 171.55,
+                            "size": 100,
+                            "conditions": [
+                                12,
+                                41
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1063,
+                            "participant_timestamp": 1517562000015577000,
+                            "sip_timestamp": 1517562000016036600
+                        },
+                        "timestamp": 1517562000016,
+                        "datetime": "2018-02-02T09:00:00.016Z",
+                        "symbol": "AAPL/USD",
+                        "order": null,
+                        "type": null,
+                        "side": null,
+                        "takerOrMaker": null,
+                        "price": 171.55,
+                        "amount": 100,
+                        "cost": 17155,
+                        "fee": {
+                            "cost": null,
+                            "currency": null
+                        },
+                        "fees": []
+                    },
+                    {
+                        "id": "2",
+                        "info": {
+                            "id": "2",
+                            "exchange": 12,
+                            "tape": 3,
+                            "price": 171.56,
+                            "size": 50,
+                            "conditions": [
+                                12
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1064,
+                            "participant_timestamp": 1517562000115577000,
+                            "sip_timestamp": 1517562000116036600
+                        },
+                        "timestamp": 1517562000116,
+                        "datetime": "2018-02-02T09:00:00.116Z",
+                        "symbol": "AAPL/USD",
+                        "order": null,
+                        "type": null,
+                        "side": null,
+                        "takerOrMaker": null,
+                        "price": 171.56,
+                        "amount": 50,
+                        "cost": 8578,
+                        "fee": {
+                            "cost": null,
+                            "currency": null
+                        },
+                        "fees": []
+                    }
+                ]
+            },
+            {
+                "description": "trades since a timestamp",
+                "method": "fetchTrades",
+                "input": [
+                    "AAPL/USD",
+                    1517562000000,
+                    100
+                ],
+                "httpResponse": {
+                    "request_id": "a47d1beb8c11b6ae897ab76cdbbf35a3",
+                    "status": "OK",
+                    "results": [
+                        {
+                            "id": "1",
+                            "exchange": 11,
+                            "tape": 3,
+                            "price": 171.55,
+                            "size": 100,
+                            "conditions": [
+                                12,
+                                41
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1063,
+                            "participant_timestamp": 1517562000015577000,
+                            "sip_timestamp": 1517562000016036600
+                        },
+                        {
+                            "id": "2",
+                            "exchange": 12,
+                            "tape": 3,
+                            "price": 171.56,
+                            "size": 50,
+                            "conditions": [
+                                12
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1064,
+                            "participant_timestamp": 1517562000115577000,
+                            "sip_timestamp": 1517562000116036600
+                        }
+                    ]
+                },
+                "parsedResponse": [
+                    {
+                        "id": "1",
+                        "info": {
+                            "id": "1",
+                            "exchange": 11,
+                            "tape": 3,
+                            "price": 171.55,
+                            "size": 100,
+                            "conditions": [
+                                12,
+                                41
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1063,
+                            "participant_timestamp": 1517562000015577000,
+                            "sip_timestamp": 1517562000016036600
+                        },
+                        "timestamp": 1517562000016,
+                        "datetime": "2018-02-02T09:00:00.016Z",
+                        "symbol": "AAPL/USD",
+                        "order": null,
+                        "type": null,
+                        "side": null,
+                        "takerOrMaker": null,
+                        "price": 171.55,
+                        "amount": 100,
+                        "cost": 17155,
+                        "fee": {
+                            "cost": null,
+                            "currency": null
+                        },
+                        "fees": []
+                    },
+                    {
+                        "id": "2",
+                        "info": {
+                            "id": "2",
+                            "exchange": 12,
+                            "tape": 3,
+                            "price": 171.56,
+                            "size": 50,
+                            "conditions": [
+                                12
+                            ],
+                            "correction": 0,
+                            "sequence_number": 1064,
+                            "participant_timestamp": 1517562000115577000,
+                            "sip_timestamp": 1517562000116036600
+                        },
+                        "timestamp": 1517562000116,
+                        "datetime": "2018-02-02T09:00:00.116Z",
+                        "symbol": "AAPL/USD",
+                        "order": null,
+                        "type": null,
+                        "side": null,
+                        "takerOrMaker": null,
+                        "price": 171.56,
+                        "amount": 50,
+                        "cost": 8578,
+                        "fee": {
+                            "cost": null,
+                            "currency": null
+                        },
+                        "fees": []
+                    }
+                ]
+            }
+        ],
+        "fetchOrderBook": [
+            {
+                "description": "national best bid and offer",
+                "method": "fetchOrderBook",
+                "input": [
+                    "AAPL/USD"
+                ],
+                "httpResponse": {
+                    "request_id": "b84e24636301f19f88e0dfbf9a45ed5c",
+                    "status": "OK",
+                    "results": {
+                        "P": 127.98,
+                        "S": 7,
+                        "T": "AAPL",
+                        "X": 19,
+                        "p": 127.96,
+                        "q": 83480742,
+                        "s": 1,
+                        "t": 1617827221349730300,
+                        "x": 11,
+                        "y": 1617827221349366000,
+                        "z": 3
+                    }
+                },
+                "parsedResponse": {
+                    "symbol": "AAPL/USD",
+                    "bids": [
+                        [
+                            127.96,
+                            1
+                        ]
+                    ],
+                    "asks": [
+                        [
+                            127.98,
+                            7
+                        ]
+                    ],
+                    "timestamp": 1617827221349,
+                    "datetime": "2021-04-07T20:27:01.349Z",
+                    "nonce": 83480742
+                }
+            }
+        ]
+    }
+}
